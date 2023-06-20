@@ -1,6 +1,11 @@
 using ControlSystemsBase
 using LinearAlgebra
 
+function delay_lqr(sys::StateSpace, h::Float64; Q=I, R=I)
+    sysd_delay = c2da(sys, h)
+    lqr(sysd_delay, Q, R)
+end
+
 # Pole placement only works with single input single output (SISO) systems. i.e., 
 # sys.B & sys.D can only have 1 column and sys.C & sys.D can only have 1 row
 function pole_place(sys::StateSpace, h::Float64; p=0.9)

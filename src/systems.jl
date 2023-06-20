@@ -1,3 +1,6 @@
+using LinearAlgebra
+using ControlSystemsBase
+
 # Resistor-capacitor network
 sys_rcn = let
 	r_1 = 100000
