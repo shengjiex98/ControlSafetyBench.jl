@@ -10,7 +10,7 @@ end
 # sys.B & sys.D can only have 1 column and sys.C & sys.D can only have 1 row
 function pole_place(sysc::AbstractStateSpace{<:Continuous}, h::Float64; p=0.9)
     sysd_delay = c2da(sysc, h)
-    place(sysd_delay, vcat([0], fill(p, size(sys.A)[1])))
+    place(sysd_delay, vcat([0], fill(p, size(sysc.A)[1])))
 end
 
 function c2da(sysc::AbstractStateSpace{<:Continuous}, h::Float64)

@@ -83,11 +83,11 @@ sys_cc = let
 end
 
 benchmarks = (
-    RC = sys_rcn,
-    F1 = sys_f1t,
-    DC = sys_dcm,
-    CS = sys_css,
-    EW = sys_ewb,
-    C1 = sys_cc1,
-    CC = sys_cc2
+    RC = sys_rc,
+    F1 = sys_f1,
+    DC = sys_dc,
+    CS = sys_cs,
+    EW = sys_ew,
+    C1 = sys_c1,
+    CC = sys_cc
 )

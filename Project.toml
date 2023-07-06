@@ -1,7 +1,7 @@
 name = "ControlSafetyBench"
 uuid = "b878d8fe-c8de-4236-8931-715afe6be538"
 authors = ["Shengjie Xu"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 ControlSystemsBase = "aaaaaaaa-a6ca-5380-bf3e-84a91bcd477e"
